@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: #f16059;
   height: 100%;
   width: 100%;
 }
@@ -111,16 +111,23 @@ body {
 
 header,
 footer {
-  background-color: #222;
+  background-color: #f16059;
   height: 80px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 main {
-  background-color: #ccc;
+  background: url(../img/tim-van-der-kuip-unsplash.jpg);
   height: 250px;
   width: 100%;
-
+}
+main p {
+    width: 30%;
+    color: red;
 }
 
 header,
@@ -140,16 +147,50 @@ main {
 }
 
 .flex-items {
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    color: #ccc;
+    line-height: 1.5em;
+    font-size: 1em;
+    background-color: rgb(89, 144, 144);
+    width: 31%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+footer {
+    text-align: center;
+    flex-direction: column;
+  }
+footer p {
+    margin: 0;
+  }
+footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+  } 
+footer .contact {
+    margin-bottom: 50px;
+  }
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+footer .social-icons p {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   border-radius: 50%;
+   width: 40px;
+   height: 40px;
+ }
+footer .social-icons p i {
+   font-size: 1.3125em;
+ }
+footer .copyright {
+   margin: 20px 0;
+ }
 
 /* ==========================================================================
    Helper classes
